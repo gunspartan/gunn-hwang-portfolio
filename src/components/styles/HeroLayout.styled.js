@@ -4,7 +4,7 @@ export const StyledHero = styled.div`
   margin-top: 10rem;
   height: 40vh;
   margin-left: ${({ theme }) => theme.sidebarWidth};
-  width: ${window.innerWidth - 300}px;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   align-items: center;

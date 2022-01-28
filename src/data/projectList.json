@@ -1,0 +1,52 @@
+[
+  {
+    "title": "LeetCodePrison",
+    "image": "images/LeetCodePrison_portrait.png",
+    "stack": [
+      {
+        "name": "React Native",
+        "icon": "images/react.svg",
+        "url": "https://react-native.com"
+      }
+    ],
+    "description": "Simple app to keep track of your LeetCode suffering",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/gunspartan/LeetCodePrison"
+      }
+    ]
+  },
+  {
+    "title": "Artisan Online",
+    "image": "images/ArtisanMockup.png",
+    "stack": [
+      {
+        "name": "ReactJS",
+        "icon": "images/react.svg",
+        "url": "https://reactjs.com"
+      },
+      {
+        "name": "Strapi.io",
+        "icon": "images/strapi.svg",
+        "url": "https://strapi.com"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "images/bootstrap.svg",
+        "url": "https://bootstrap.com"
+      }
+    ],
+    "description": "Full-stack React website running Strapi.io made for a local kitchen renovation company.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/gunspartan/LeetCodePrison"
+      },
+      {
+        "type": "website",
+        "url": "https://artisanonline.com"
+      }
+    ]
+  }
+]

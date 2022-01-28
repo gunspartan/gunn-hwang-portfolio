@@ -11,11 +11,9 @@ export const StyledNav = styled.nav`
   left: 0;
   top: 0;
   border-right: 5px ${({ theme }) => theme.colors.primary} solid;
-  font-weight: 200;
 
   h2 {
     margin-top: 2rem;
-    font-weight: 200;
   }
 
   ul {

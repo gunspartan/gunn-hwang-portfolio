@@ -2,28 +2,21 @@ import styled from "styled-components";
 
 export const StyledHero = styled.div`
   margin-top: 10rem;
-  height: 40vh;
-  margin-left: ${({ theme }) => theme.sidebarWidth};
-  width: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
+  height: 40vh;
+  width: 100%;
   button {
     align-self: flex-end;
   }
 
   svg {
-    position: fixed;
+    position: absolute;
     z-index: -1;
     top: 10px;
-    left: 700px;
+    right: -10%;
     height: 50rem;
-  }
-
-  h1,
-  h3 {
-    font-weight: 300;
   }
 `;
 

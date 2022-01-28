@@ -1,6 +1,8 @@
 import * as React from "react";
 import Navbar from "../components/Navbar";
 import HeroLayout from "../components/HeroLayout";
+import AboutLayout from "../components/AboutLayout";
+import ProjectsLayout from "../components/ProjectsLayout";
 
 // Styles
 import { ThemeProvider } from "styled-components";
@@ -23,9 +25,9 @@ const IndexPage = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Navbar />
-      <div>
-        <HeroLayout />
-      </div>
+      <HeroLayout />
+      <AboutLayout />
+      <ProjectsLayout />
     </ThemeProvider>
   );
 };

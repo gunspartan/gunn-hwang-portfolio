@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { FaHome, FaInfoCircle, FaCode, FaEnvelope } from "react-icons/fa";
 import ProfileImg from "./ProfileImg";
 import { Flex } from "./styles/Flex.styled";
@@ -13,28 +14,28 @@ export default function Navbar() {
       </Flex>
       <ul>
         <li>
-          <a href='#Home'>
+          <Link to='#Home'>
             <FaHome />
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href='#'>
+          <Link to='#'>
             <FaInfoCircle />
             About Me
-          </a>
+          </Link>
         </li>
         <li>
-          <a href='#'>
+          <Link to='#'>
             <FaCode />
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a href='#'>
+          <Link to='#'>
             <FaEnvelope />
             Contact Me
-          </a>
+          </Link>
         </li>
       </ul>
     </StyledNav>

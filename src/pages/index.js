@@ -7,6 +7,7 @@ import ProjectsLayout from "../components/ProjectsLayout";
 // Styles
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/styles/Global";
+import { Watermark } from "../components/styles/WatermarkTemp.styled";
 
 const theme = {
   colors: {
@@ -24,6 +25,9 @@ const IndexPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
+      <Watermark>
+        <h1>WORK IN PROGRESS</h1>
+      </Watermark>
       <Navbar />
       <HeroLayout />
       <AboutLayout />

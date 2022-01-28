@@ -1,8 +1,51 @@
 import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
 import { FaGithub, FaLink } from "react-icons/fa";
+import {
+  ProjectItem,
+  ProjectInfo,
+  TechStack,
+  StyledStackLink,
+  ProjectImage,
+  StyledDescription,
+  StyledLinkIcons,
+} from "./styles/ProjectShowcase.styled";
+import SectionHeader from "./SectionHeader";
 
 const ProjectShowcase = () => {
+  const renderDivder = () => {
+    return <SectionHeader />;
+  };
+
+  const renderProjects = (item, index) => {
+    return (
+      <ProjectItem id={index}>
+        <ProjectInfo>
+          <h1>{item.node.title}</h1>
+          <TechStack>
+            {item.node.stack.map((technology, index) => {
+              return (
+                <StyledStackLink key={index}>
+                  <Link to={technology.url}>
+                    <img src={technology.icon} alt={`${technology.name}`} />
+                    {technology.name}
+                  </Link>
+                </StyledStackLink>
+              );
+            })}
+          </TechStack>
+          <StyledDescription>{item.node.description}</StyledDescription>
+          <StyledLinkIcons>
+            {item.node.links.map((link, index) => (
+              <Link to={link.url}>{renderIcon(link.type)}</Link>
+            ))}
+          </StyledLinkIcons>
+        </ProjectInfo>
+        <ProjectImage id={item.node.id} src={item.node.image} alt={`${item.node.title}`} />
+      </ProjectItem>
+    );
+  };
+
   const renderIcon = (linkType) => {
     switch (linkType) {
       case "github":
@@ -40,35 +83,20 @@ const ProjectShowcase = () => {
         }
       `}
       render={(data) => (
-        <div>
+        <>
           {data.allProjectListJson.edges.map((item, index) => {
-            console.log(item.node.stack);
-            return (
-              <div id={index}>
-                <div>
-                  <h1>{item.node.title}</h1>
-                  <div>
-                    {item.node.stack.map((technology, index) => {
-                      return (
-                        <div key={index}>
-                          <img src={technology.icon} alt={`${technology.name}-icon`} />
-                          <Link to={technology.url}>{technology.name}</Link>
-                        </div>
-                      );
-                    })}
-                  </div>
-                  <p>{item.node.description}</p>
-                </div>
-                <img src={item.node.image} alt={`image-${item.node.title}`} style={{ height: "600px" }} />
-                <div>
-                  {item.node.links.map((link, index) => (
-                    <Link to={link.url}>{renderIcon(link.type)}</Link>
-                  ))}
-                </div>
-              </div>
-            );
+            if (data.allProjectListJson.edges[index + 1]) {
+              return (
+                <>
+                  {renderProjects(item, index)}
+                  {renderDivder()}
+                </>
+              );
+            } else {
+              return renderProjects(item, index);
+            }
           })}
-        </div>
+        </>
       )}
     />
   );

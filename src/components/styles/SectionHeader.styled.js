@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.div`
-  margin-top: 25rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
   display: flex;
   width: 100%;
   flex-direction: column;

@@ -20,6 +20,7 @@ export default function AboutLayout() {
             <h1>Kwantlen Polytechnic University</h1>
           </AboutHeadline>
         </AboutMain>
+        <h3>I don't know what to put here yet, so here's some lorem ipsum:</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nihil voluptatum aspernatur impedit nemo
           nulla, ipsam ut at iusto explicabo?

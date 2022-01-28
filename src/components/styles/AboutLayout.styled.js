@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledAbout = styled.div`
-  margin-top: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
 

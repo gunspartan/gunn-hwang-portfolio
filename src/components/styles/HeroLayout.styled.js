@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledHero = styled.div`
   margin-top: 10rem;
+  margin-bottom: 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

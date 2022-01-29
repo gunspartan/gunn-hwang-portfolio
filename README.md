@@ -96,11 +96,13 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
 - npm
   ```sh
   npm install npm@latest -g
+  ```
+- gatsby-cli
+  ```sh
+  npm install -g gatsby-cli
   ```
 
 ### Installation
@@ -113,6 +115,16 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Usage
+
+- Running the website locally
+  ```sh
+  gatsby develop
+  ```
+  _Please refer to the [Gatsby Documentation](https://www.gatsbyjs.com/docs) for more details_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

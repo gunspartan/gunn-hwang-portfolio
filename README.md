@@ -63,12 +63,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -77,6 +73,10 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://gunnhwang.com)
+
+My second iteration of my portfolio, [gunnhwang.com](https://gunnhwang.com)!
+
+Currently a work in progress.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

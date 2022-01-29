@@ -14,25 +14,25 @@ export default function Navbar() {
       </Flex>
       <ul>
         <li>
-          <Link to='#Home'>
+          <Link to='#home'>
             <FaHome />
             Home
           </Link>
         </li>
         <li>
-          <Link to='#'>
+          <Link to='#about-me'>
             <FaInfoCircle />
             About Me
           </Link>
         </li>
         <li>
-          <Link to='#'>
+          <Link to='#projects'>
             <FaCode />
             Projects
           </Link>
         </li>
         <li>
-          <Link to='#'>
+          <Link to='#contact'>
             <FaEnvelope />
             Contact Me
           </Link>

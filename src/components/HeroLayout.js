@@ -7,8 +7,8 @@ import Blob1 from "../images/Blob1.svg";
 
 export default function HeroLayout() {
   return (
-    <Container>
-      <StyledHero id='Home'>
+    <Container id='home'>
+      <StyledHero>
         <Headline>
           <div>
             <h3>Hi,</h3>
@@ -23,9 +23,7 @@ export default function HeroLayout() {
             </h1>
           </div>
         </Headline>
-        <StyledButton>
-          <p>Let's Talk!</p>
-        </StyledButton>
+        <StyledButton href='#contact'>Let's Talk!</StyledButton>
         <Blob1 />
       </StyledHero>
     </Container>

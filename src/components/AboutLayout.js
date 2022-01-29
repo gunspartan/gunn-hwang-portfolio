@@ -6,7 +6,7 @@ import { StyledAbout, AboutMain, AboutName, AboutHeadline } from "./styles/About
 
 export default function AboutLayout() {
   return (
-    <Container direction='column'>
+    <Container direction='column' id='about-me'>
       <SectionHeader title='About Me' icon='about' />
       <StyledAbout>
         <AboutMain>

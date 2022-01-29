@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function ProjectsLayout() {
   return (
-    <Container direction='column'>
+    <Container direction='column' id='projects'>
       <SectionHeader title='Projects' icon='projects' />
       <ProjectShowcase />
       <div>

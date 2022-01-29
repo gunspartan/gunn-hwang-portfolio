@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function ContactLayout() {
   return (
-    <Container direction='column'>
+    <Container direction='column' id='contact'>
       <SectionHeader title='Contact Me' icon='contact' />
       <div>
         <ContactLink>

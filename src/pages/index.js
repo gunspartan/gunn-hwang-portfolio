@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroLayout from "../components/HeroLayout";
 import AboutLayout from "../components/AboutLayout";
 import ProjectsLayout from "../components/ProjectsLayout";
+import ContactLayout from "../components/ContactLayout";
 
 // Styles
 import { ThemeProvider } from "styled-components";
@@ -32,6 +33,7 @@ const IndexPage = () => {
       <HeroLayout />
       <AboutLayout />
       <ProjectsLayout />
+      <ContactLayout />
     </ThemeProvider>
   );
 };

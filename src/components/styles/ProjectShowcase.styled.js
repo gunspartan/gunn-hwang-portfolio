@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 export const ProjectItem = styled.div`
   width: 100%;
@@ -53,5 +54,22 @@ export const StyledLinkIcons = styled.div`
     margin-right: 1rem;
     font-size: 24px;
     color: ${({ theme }) => theme.colors.primary};
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  margin: 3rem;
+  text-decoration: underline;
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 20px;
+
+  svg {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  h3 {
+    margin-left: 1rem;
   }
 `;

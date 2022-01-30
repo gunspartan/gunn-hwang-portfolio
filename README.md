@@ -26,9 +26,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <!-- <a href="https://github.com/gunspartan/gunn-hwang-portfolio">
-    <img src="screenshots/logo.png" alt="Logo" width="80" height="80">
-  </a> -->
+  <a href="https://github.com/gunspartan/gunn-hwang-portfolio">
+    <img src="images/logo-full-primary-white.png" alt="Logo" width="300" height="300">
+  </a>
 
 <h3 align="center">Gunn Hwang Portfolio</h3>
 
@@ -154,4 +154,4 @@ Project Link: [https://github.com/gunspartan/gunn-hwang-portfolio](https://githu
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[product-screenshot]: screenshots/screenshot.png
+[product-screenshot]: images/screenshot.png

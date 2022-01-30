@@ -8,7 +8,7 @@ export const StyledButton = styled.a`
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.black};
   height: 40px;
-  width: 120px;
+  min-width: 120px;
   border-radius: 50px;
   border: none;
   cursor: pointer;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { FaHome, FaInfoCircle, FaCode, FaEnvelope } from "react-icons/fa";
-import ProfileImg from "./ProfileImg";
+import Logo from "./Logo";
 import { Flex } from "./styles/Flex.styled";
 import { StyledNav } from "./styles/Navbar.styled";
 
@@ -9,8 +9,9 @@ export default function Navbar() {
   return (
     <StyledNav>
       <Flex direction='column'>
-        <ProfileImg />
-        <h2>Gunn Hwang</h2>
+        <Link to='#home'>
+          <Logo />
+        </Link>
       </Flex>
       <ul>
         <li>

@@ -38,9 +38,9 @@ const IndexPage = () => {
         <meta name='msapplication-TileColor' content='#010b14' />
         <meta name='theme-color' content='#010b14'></meta>
       </Helmet>
-      <Watermark>
+      {/* <Watermark>
         <h1>WORK IN PROGRESS</h1>
-      </Watermark>
+      </Watermark> */}
       <Navbar />
       <HeroLayout />
       <AboutLayout />

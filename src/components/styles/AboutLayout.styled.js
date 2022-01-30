@@ -9,6 +9,11 @@ export const StyledAbout = styled.div`
   p {
     font-size: 24px;
   }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: 1rem;
+    align-items: center;
+  }
 `;
 
 export const AboutMain = styled.div`
@@ -16,11 +21,21 @@ export const AboutMain = styled.div`
   display: flex;
   justify-content: space-between;
   padding-bottom: 5rem;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const AboutName = styled.h1`
-  padding-top: 1rem;
-  font-size: 28px;
+  padding-top: 2rem;
+  font-size: 32px;
+
+  span {
+    color: ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 export const AboutHeadline = styled.div`
@@ -32,5 +47,9 @@ export const AboutHeadline = styled.div`
   }
   h1:nth-child(3) {
     font-size: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    text-align: center;
   }
 `;

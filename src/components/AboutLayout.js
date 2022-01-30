@@ -12,7 +12,10 @@ export default function AboutLayout() {
         <AboutMain>
           <div>
             <ProfileImg />
-            <AboutName>Gunn Hwang</AboutName>
+            <AboutName>
+              <span>Gunn </span>
+              Hwang
+            </AboutName>
           </div>
           <AboutHeadline>
             <h1>Self-taught developer</h1>

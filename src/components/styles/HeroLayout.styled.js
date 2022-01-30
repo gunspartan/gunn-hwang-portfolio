@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.div`
+  position: relative;
   margin-top: 10rem;
   margin-bottom: 20rem;
   display: flex;
@@ -8,16 +9,23 @@ export const StyledHero = styled.div`
   align-items: center;
   height: 40vh;
   width: 100%;
-  button {
-    align-self: flex-end;
-  }
 
   svg {
     position: absolute;
-    z-index: -1;
-    top: 10px;
-    right: -10%;
+    z-index: -10;
+    right: -40%;
     height: 50rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+
+    svg {
+      left: 80%;
+      top: 60%;
+      transform: translate(-50%, -50%);
+      height: 30rem;
+    }
   }
 `;
 

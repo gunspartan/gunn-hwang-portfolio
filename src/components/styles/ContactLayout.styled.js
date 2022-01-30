@@ -18,4 +18,17 @@ export const ContactLink = styled.div`
       color: ${({ theme }) => theme.colors.primary};
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      svg {
+        margin: 2rem 0;
+        font-size: 34px;
+      }
+    }
+  }
 `;

@@ -6,6 +6,11 @@ export const ProjectItem = styled.div`
   display: flex;
   position: relative;
   min-height: 500px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ProjectInfo = styled.div`
@@ -14,11 +19,23 @@ export const ProjectInfo = styled.div`
   width: 60%;
   margin-left: 0;
   z-index: 2;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const TechStack = styled.div`
   display: flex;
   margin-top: 1rem;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const StyledStackLink = styled.div`
@@ -32,6 +49,10 @@ export const StyledStackLink = styled.div`
       margin-right: 0.5rem;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: 0.5rem;
+  }
 `;
 
 export const ProjectImage = styled.img`
@@ -41,6 +62,12 @@ export const ProjectImage = styled.img`
   max-height: 500px;
   max-width: 500px;
   right: -10%;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: 1rem;
+    position: static;
+    max-height: 300px;
+  }
 `;
 
 export const StyledDescription = styled.h2`
@@ -71,5 +98,9 @@ export const StyledLink = styled(Link)`
 
   h3 {
     margin-left: 1rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin: 3rem auto;
   }
 `;

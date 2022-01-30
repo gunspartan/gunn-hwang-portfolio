@@ -9,7 +9,6 @@ import ContactLayout from "../components/ContactLayout";
 // Styles
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../components/styles/Global";
-import { Watermark } from "../components/styles/WatermarkTemp.styled";
 
 const theme = {
   colors: {
@@ -19,7 +18,7 @@ const theme = {
     black: "#010B14",
   },
   sidebarWidth: "300px",
-  mobile: "768px",
+  mobile: "1024px",
 };
 
 // markup
@@ -38,9 +37,6 @@ const IndexPage = () => {
         <meta name='msapplication-TileColor' content='#010b14' />
         <meta name='theme-color' content='#010b14'></meta>
       </Helmet>
-      {/* <Watermark>
-        <h1>WORK IN PROGRESS</h1>
-      </Watermark> */}
       <Navbar />
       <HeroLayout />
       <AboutLayout />

@@ -59,6 +59,8 @@ export const ProjectImage = styled.img`
   position: absolute;
   z-index: 1;
   transform: rotate(5deg);
+  width: 50%;
+  object-fit: contain;
   max-height: 500px;
   max-width: 500px;
   right: -10%;

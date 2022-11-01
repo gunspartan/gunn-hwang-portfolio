@@ -23,9 +23,9 @@ export default function ContactLayout() {
           </a>
         </ContactLink>
         <ContactLink>
-          <a href='https://linkedin.com/in/gunn-hwang-141b05186'>
+          <a href='https://linkedin.com/in/gunn-hwang'>
             <FaLinkedin />
-            linkedin.com/in/gunn-hwang-141b05186
+            linkedin.com/in/gunn-hwang
           </a>
         </ContactLink>
       </div>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledAbout = styled.div`
   margin-top: 3rem;
@@ -8,6 +8,7 @@ export const StyledAbout = styled.div`
 
   p {
     font-size: 24px;
+    padding-bottom: 2rem;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {

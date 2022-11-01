@@ -1,8 +1,8 @@
-import React from "react";
-import SectionHeader from "./SectionHeader";
-import ProfileImg from "./ProfileImg";
-import { Container } from "./styles/Container.styled";
-import { StyledAbout, AboutMain, AboutName, AboutHeadline } from "./styles/AboutLayout.styled";
+import React from 'react';
+import SectionHeader from './SectionHeader';
+import ProfileImg from './ProfileImg';
+import { Container } from './styles/Container.styled';
+import { StyledAbout, AboutMain, AboutName, AboutHeadline } from './styles/AboutLayout.styled';
 
 export default function AboutLayout() {
   return (
@@ -23,11 +23,9 @@ export default function AboutLayout() {
             <h1>Kwantlen Polytechnic University</h1>
           </AboutHeadline>
         </AboutMain>
-        <h3>I don't know what to put here yet, so here's some lorem ipsum:</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nihil voluptatum aspernatur impedit nemo
-          nulla, ipsam ut at iusto explicabo?
-        </p>
+        <p>Hi, my name is Gunn.</p>
+        <p>Soon to be grad with a Bachelor's of Technology in Information Technology. (Dec 2023)</p>
+        <p>I hope to one day work as Software Developer role and work with a diverse team.</p>
       </StyledAbout>
     </Container>
   );

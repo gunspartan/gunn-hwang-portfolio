@@ -43,14 +43,26 @@ export const AboutHeadline = styled.div`
   padding-top: 2rem;
   text-align: end;
 
-  h1:nth-child(2) {
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  h1:nth-child(3) {
     margin-top: 2rem;
   }
-  h1:nth-child(3) {
+  h1:nth-child(4) {
     font-size: 24px;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     text-align: center;
+  }
+`;
+
+export const AboutDescription = styled.div`
+  div {
+    display: flex;
+    gap: 1rem;
   }
 `;

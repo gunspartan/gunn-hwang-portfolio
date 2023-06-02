@@ -6,7 +6,7 @@ export default function ProfileImg() {
   return (
     <StyledProfile>
       <div>
-        <StaticImage src='../images/profile_ccexpress.png' alt='Picture of Gunn Hwang' />
+        <StaticImage src='../images/gunn_headshot.jpg' alt='Picture of Gunn Hwang' />
       </div>
     </StyledProfile>
   );

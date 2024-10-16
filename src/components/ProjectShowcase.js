@@ -1,6 +1,6 @@
-import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
-import { FaGithub, FaLink } from "react-icons/fa";
+import React from 'react';
+import { StaticQuery, graphql, Link } from 'gatsby';
+import { FaGithub, FaLink } from 'react-icons/fa';
 import {
   ProjectItem,
   ProjectInfo,
@@ -9,8 +9,8 @@ import {
   ProjectImage,
   StyledDescription,
   StyledLinkIcons,
-} from "./styles/ProjectShowcase.styled";
-import SectionHeader from "./SectionHeader";
+} from './styles/ProjectShowcase.styled';
+import SectionHeader from './SectionHeader';
 
 const ProjectShowcase = () => {
   const renderDivder = () => {
@@ -27,7 +27,11 @@ const ProjectShowcase = () => {
               return (
                 <StyledStackLink key={index}>
                   <Link to={technology.url}>
-                    <img src={technology.icon} alt={`${technology.name}`} />
+                    <img
+                      src={technology.icon}
+                      alt={`${technology.name}`}
+                      style={{ width: '1em', height: '1em' }}
+                    />
                     {technology.name}
                   </Link>
                 </StyledStackLink>
@@ -36,7 +40,7 @@ const ProjectShowcase = () => {
           </TechStack>
           <StyledDescription>{item.node.description}</StyledDescription>
           <StyledLinkIcons>
-            {item.node.links.map((link, index) => (
+            {item.node.links.map((link) => (
               <Link to={link.url}>{renderIcon(link.type)}</Link>
             ))}
           </StyledLinkIcons>
@@ -48,9 +52,9 @@ const ProjectShowcase = () => {
 
   const renderIcon = (linkType) => {
     switch (linkType) {
-      case "github":
+      case 'github':
         return <FaGithub />;
-      case "website":
+      case 'website':
         return <FaLink />;
       default:
         break;

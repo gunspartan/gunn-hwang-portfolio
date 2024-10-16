@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import SectionHeader from './SectionHeader';
 import ProfileImg from './ProfileImg';
 import { Container } from './styles/Container.styled';
@@ -25,30 +24,23 @@ export default function AboutLayout() {
             </AboutName>
           </div>
           <AboutHeadline>
-            <h1>Computer Science student at</h1>
+            <h1>Computer Science graduate at</h1>
             <h1>Kwantlen Polytechnic University</h1>
           </AboutHeadline>
         </AboutMain>
         <AboutDescription>
           <div>
             <p>👋</p>
-            <p>Hey there, I'm Gunn.</p>
-          </div>
-          <div>
-            <p>🎓</p>
-            <p>
-              I'm on the verge of earning my Bachelor's degree in Information Technology, brimming
-              with passion and excitement.
-            </p>
+            <p>Hi! I’m Gunn Hwang</p>
           </div>
           <div>
             <p>💻</p>
             <p>
-              Currently, I'm honing my skills as a front-end developer intern{' '}
-              <span>
-                <Link to='https://www.blaisetransit.com'> @ Blaise Transit</Link>
-              </span>
-              , where I get to immerse myself in the dynamic world of web development.
+              I'm a dedicated software engineer with over a year of experience in front-end and
+              full-stack development. I specialize in building intuitive, responsive, and scalable
+              web applications using JavaScript, React, and TypeScript. My passion for clean code,
+              attention to detail, and problem-solving have driven me to continually grow and
+              deliver impactful solutions.
             </p>
           </div>
           <div>

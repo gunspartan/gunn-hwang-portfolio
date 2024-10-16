@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import { FaHome, FaInfoCircle, FaCode, FaEnvelope, FaFilePdf } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaCode, FaEnvelope, FaFilePdf, FaBriefcase } from 'react-icons/fa';
 import Logo from './Logo';
 import { Flex } from './styles/Flex.styled';
 import { StyledNav } from './styles/Navbar.styled';
@@ -38,6 +38,12 @@ export default function Navbar() {
           <Link to='#about-me'>
             <FaInfoCircle />
             About Me
+          </Link>
+        </li>
+        <li>
+          <Link to='#experience'>
+            <FaBriefcase />
+            Experience
           </Link>
         </li>
         <li>

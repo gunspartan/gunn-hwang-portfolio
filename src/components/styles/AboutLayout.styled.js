@@ -61,11 +61,6 @@ export const AboutDescription = styled.div`
     gap: 1rem;
   }
 
-  a {
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.primary};
-  }
-
   div:last-child {
     padding-top: 2rem;
     justify-content: center;

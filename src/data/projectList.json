@@ -1,5 +1,28 @@
 [
   {
+    "title": "SunnySundayBot",
+    "image": "images/sunny-sunday-bot.png",
+    "stack": [
+      {
+        "name": "Python",
+        "icon": "images/python.svg",
+        "url": "https://python.org"
+      },
+      {
+        "name": "Discord.py",
+        "icon": "images/discord.svg",
+        "url": "https://discordpy.readthedocs.io/en/stable/"
+      }
+    ],
+    "description": "Developed a Discord bot using Python and Beautiful Soup to parse data from the MapleStory website, benefiting a community of 500+ users. Deployed using Docker on Raspberry Pi.",
+    "links": [
+      {
+        "type": "github",
+        "url": "https://github.com/gunspartan/sunny-sunday-bot"
+      }
+    ]
+  },
+  {
     "title": "LeetCodePrison",
     "image": "images/LeetCodePrison_portrait.png",
     "stack": [
@@ -42,10 +65,6 @@
       {
         "type": "github",
         "url": "https://github.com/gunspartan/artisan-client"
-      },
-      {
-        "type": "website",
-        "url": "https://artisan-online-client.herokuapp.com"
       }
     ]
   }
